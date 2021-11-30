@@ -217,6 +217,8 @@
         $(this).context.dataset.background = "assets/images/story/garba.jpeg";
         else if(indx ==1)
         $(this).context.dataset.background = "assets/images/story/our12.jpg";
+        else if(indx ==2)
+        $(this).context.dataset.background = "assets/images/story/our11.jpg";
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
