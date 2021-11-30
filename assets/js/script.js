@@ -213,6 +213,10 @@
     // DATA BACKGROUND IMAGE
     var sliderBgSetting = $(".slide-bg-image");
     sliderBgSetting.each(function(indx){
+        if(indx ==0)
+        $(this).context.dataset.background = "assets/images/story/garba.jpeg";
+        else if(indx ==1)
+        $(this).context.dataset.background = "assets/images/story/our1.jpeg";
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
