@@ -431,10 +431,8 @@
     if ($("#clock").length) {
         $('#clock').countdown('2021/12/11', function(event) {
             var $this = $(this).html(event.strftime(''
-            + '<div class="box"><div>%D</div> <span>Days</span> </div>'
-            + '<div class="box"><div>%H</div> <span>Hours</span> </div>'
-            + '<div class="box"><div>%M</div> <span>Mins</span> </div>'
-            + '<div class="box"><div>%S</div> <span>Secs</span> </div>'));
+            + '<div class="box"><div>%D&nbsp;%H&nbsp;%M&nbsp;%S</div><span>Days &emsp;Hours &emsp;Mins &emsp;Secs</span> </div>'
+            ));
         });
     }
 
